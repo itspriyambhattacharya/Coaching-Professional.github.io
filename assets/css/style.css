@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    padding: 25px 150px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 15px #cacaca ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo h2{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+.logo p{
+    font-family: arial;
+    font-size: 15px;
+}
+#navul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+.mr-25{
+    margin-right: 25px;
+}
+#navul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, sans-serif ;
+    font-size: 14px;
+}
+.profile-img{
+    width: 30px;
+}
+#banner{
+    position: relative;
+    width: 100%;
+    /* height: 600px; */
+    padding: 300px 0px;
+    background-image: url(../img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.content{
+    /* border: 2px solid black; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    
+}
+.center{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.arial{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ls{
+    letter-spacing: 0.15em;
+}
+#success{
+    font-size: 100px;
+    font-weight: bold;
+}
+.big-btn{
+    width: 125px;
+    padding: 10px 0px;
+    margin: 15px auto 0px;
+    position: relative;
+    left: 36%;
+    border-radius: 0px;
+    cursor: pointer;
+    border: none;
+    /* outline: 2px solid black; */
+    background-color: #000;
+    color: white;
+    transition: 0.5s;
+}
+.big-btn:hover{
+    outline: 2px solid black;
+    color: black;
+    background-color: rgb(221, 197, 197);
+    transition: 0.5s;
+}
+.aboutme-wrap{
+    width: 100%;
+    padding-left: 150px;
+}
+.aboutme{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 70px;
+}
+.aboutme-text{
+    margin: 100px 0px;
+}
+.oswald{
+    font-family: 'Oswald', sans-serif;
+}
+.test-border-primary{
+    border: 2px solid blue;
+}
+.service-grid-border{
+    border: 7px solid rgb(0, 0, 0);
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+.abtme-head h2 , .service-head h2{
+    font-size: 42px;
+    line-height: 1.2em;
+    letter-spacing: 0.1em;
+}
+.abtme-p p{
+    line-height: 1.7em;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mb-45{
+    margin-bottom: 45px;
+}
+.line{
+    background-color: black;
+    width: 40px;
+    padding: 1.5px 0px;
+    margin-bottom: 10px;
+}
+.read-more{
+    position: relative !important ;
+    left: 0% !important ;
+}
+.read-more:hover{
+    background-color: #fff !important; 
+}
+.aboutme-img{
+    background-image: url(../img/author.jpg);
+}
+.service-wrap{
+    width: 100%;
+    padding: 100px 150px 100px;
+    background-image: url(../img/service.jpg);
+    background-attachment: fixed;
+}
+.service-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    gap: 0px 30px;
+    margin-bottom: 56px;
+}
+.service-head-item{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.no-pos{
+    position: static;
+}
+.s-line{
+    width: 290px;
+    margin-bottom: 0px;
+    border-radius: 50px;
+}
+.text-20{
+    font-size: 20px;
+}
+.leading{
+    line-height: 1.1em;
+}
+.leading-grid-p{
+    line-height: 1.5em;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.mb-12{
+    margin-bottom: 12px;
+}
+.ls-3{
+    letter-spacing: 0.3em;
+    font-weight: bold;
+}
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+#s1 p , #s2 p , #s3 p{
+    font-size: 15px;
+}
+.more-service-btn{
+    width: 189px;
+    margin: 0 auto;
+}
+.more-service{
+    width: 189px;
+    position: static;
+}
+.contact-wrap{
+    width: 100%;
+    padding: 100px 150px 100px ;
+    background-color: #57bbbf;
+}
+.contact-p{
+    font-size: 29px;
+    position: relative;
+    bottom: 4px;
+}
+.ct-p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 25.5px;
+    letter-spacing: 0.15em;
+}
+.ct-p2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 22.4px;
+    letter-spacing: 0.04em;
+}
+.sm-ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.sm-icon{
+    width: 25px;
+    height: 25px;
+}
+.mb-14{
+    margin: 14px 0px;
+}
+.left {
+    width: 50%;
+}
+.right{
+    width: 50%;
+}
+.contact-flex{
+    display: flex;
+    gap: 15px;
+}
+.contact-form-flex{
+    display: flex;
+    flex-direction: column;
+}
+.contact-form{
+    position: relative;
+}
+.contact-form input , textarea{
+    padding: 7px 0px;
+    border: 2px solid black;
+    background: transparent;
+}
+.contact-form input:focus , textarea:focus{
+    border: 3px solid rgb(0, 0, 0);
+    outline: none;
+} 
+.submit{
+    display: flex;
+    align-items: flex-end;
+}
+.submit-btn{
+    width: 125px;
+    padding: 10px 0px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.5s;
+}
+.submit-btn:hover{
+    outline: 2px solid black;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+.contact-wrap{
+    position: relative;
+}
+.sticky{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-end;
+}
+.sticky button{
+    width: 160px;
+    padding: 15px 22px 15px 18px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
